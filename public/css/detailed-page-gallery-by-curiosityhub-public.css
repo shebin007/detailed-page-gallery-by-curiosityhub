@@ -2,3 +2,69 @@
  * All of the CSS for your public-facing functionality should be
  * included in this file.
  */
+ .curiosityhub-masonary-layout-gallery {
+    display: flex;
+    min-width: 100%!important;
+    margin: 20px auto !important;
+    margin-left: -30px !important;
+    flex-wrap: wrap;
+}
+
+.curiosityhub.masonary-item {
+    max-width: calc( 33.33% - 30px );
+    margin-left: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    overflow: hidden;
+}
+@media only screen and (max-width : 767px){
+    .curiosityhub.masonary-item {
+        max-width: calc( 50% - 30px );
+    }
+}
+img.curiosityhub-featured-image {
+    display: block;
+    width: 100%;
+}
+.curiosityhub.masonary-item a {
+    text-decoration: none;
+}
+h3.curiosityhub-item-heading {
+    text-align: center;
+    background: rgba(0,0,0,.7);
+    color: white;
+    font-family: "sans-serif";
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0;
+    cursor: pointer;
+}
+@media only screen and (max-width : 767px){
+    h3.curiosityhub-item-heading {
+        font-size: 20px;      
+    }
+}
+p.curiosityhub-expert-para {
+    font-size: 12px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.entry-content img {
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+}
+
+h3.gallery-item-title {
+    margin: 10px 0px 20px 0px;
+    text-align: center;
+    font-weight: 600;
+}
+.curiosityhub_custom_post {
+    max-width: 80%;
+    margin: 100px auto;
+}
+.curiosityhub-featured-image-section img {
+    min-width: 100%;
+}

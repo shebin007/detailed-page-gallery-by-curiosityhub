@@ -13,7 +13,7 @@
  * @package           Detailed_Page_Gallery_By_Curiosityhub
  *
  * @wordpress-plugin
- * Plugin Name:       detailed page gallery by curiosityhub
+ * Plugin Name:       Detailed page gallery by curiosityhub
  * Plugin URI:        https://curiosityhub.in/
  * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
  * Version:           1.0.0
@@ -80,3 +80,17 @@ function run_detailed_page_gallery_by_curiosityhub() {
 
 }
 run_detailed_page_gallery_by_curiosityhub();
+
+
+
+// load dashicons
+function ww_load_dashicons(){
+    wp_enqueue_style('dashicons');
+}
+add_action('wp_enqueue_scripts', 'ww_load_dashicons');
+
+// load register post type
+require plugin_dir_path( __FILE__ ) . '/includes/class-custom-post-gallery.php';
+
+// load shortcode
+require plugin_dir_path( __FILE__ ) . '/includes/class-custom-post-shortcode.php';
